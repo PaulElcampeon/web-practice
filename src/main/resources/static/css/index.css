@@ -9,7 +9,6 @@ html, body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: 90%;
     margin: auto;
 }
 
@@ -39,7 +38,16 @@ li {
 }
 
 a {
-    decoration: none;
+    text-decoration: none;
+    color: black
+}
+
+a:hover {
+    color: rgb(94, 94, 94);
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 .top {
@@ -52,20 +60,21 @@ a {
 .navigation {
   display: flex;
   height: 50px;
+  width: 90%;
+  justify-content: space-between;
+  margin: auto;
+  color: black;
 }
 
 .navigation > h1 {
-    float: left;
     margin: auto;
     margin-left: 0px;
+    font-size: 1.5rem;
 }
 
 .navigation > ul {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .navigation > ul > li {
@@ -75,7 +84,13 @@ a {
 .middle {
     display: flex;
     flex-direction: column;
-    /*background-color: red;*/
+}
+
+.middle > section:not(:nth-child(1)) {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto 1rem auto;
 }
 
 .card-image {
@@ -87,12 +102,28 @@ a {
     margin: 0px;
     padding: 0px;
 }
+.mySlides {
+   display: none;
+ }
 
-/*
-.middle:not(:nth-child(0)) {
-    padding: 1rem;
-}
-*/
+ /* Fading animation */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 4s;
+   animation-name: fade;
+   animation-duration: 4s;
+ }
+
+ @-webkit-keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+
+ @keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+
 .sub-menu-section > ul {
    text-align: center;
    padding: 0;
@@ -132,7 +163,7 @@ a {
 }
 
 .sendButton {
-    background-color: grey;
+    background-color: rgb(139, 159, 169);
     width: 100px;
     height: 50px;
 }
@@ -144,12 +175,20 @@ a {
     width: 70%;
 }
 
+.blog-section-div > div:not(:last-child) {
+    border-bottom: 1px rgb(94, 94, 94) solid;
+}
+
+.blog-section-div > div {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
 .bottom {
     background-color: rgb(139, 159, 169);;
 }
 
 footer {
-    /*background-color: grey;*/
 }
 
 footer > ul {
