@@ -1,0 +1,168 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    letter-spacing: 2px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.underline {
+    border-bottom: 1px grey solid;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.black-text {
+    color: black;
+}
+
+.grey-text {
+    color: rgb(94, 94, 94);
+}
+
+.line-spacing-extra {
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    decoration: none;
+}
+
+.top {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navigation {
+  display: flex;
+  height: 50px;
+}
+
+.navigation > h1 {
+    float: left;
+    margin: auto;
+    margin-left: 0px;
+}
+
+.navigation > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation > ul > li {
+    padding: 0px 20px 0px 20px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    /*background-color: red;*/
+}
+
+.card-image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+.carousel > ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+.middle:not(:nth-child(0)) {
+    padding: 1rem;
+}
+*/
+.sub-menu-section > ul {
+   text-align: center;
+   padding: 0;
+}
+
+.sub-menu-section > ul > li {
+    float: left;
+    width: 33%;
+}
+
+.inputFormDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputFormDiv > div {
+    width: 60%;
+    margin: 10px;
+}
+
+.inputFormDiv > div > textarea,input {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-input-div {
+    height: 4rem;
+}
+
+.contact-textarea-div {
+    height: 9rem;
+}
+
+.contact-button-div {
+    text-align: center;
+}
+
+.sendButton {
+    background-color: grey;
+    width: 100px;
+    height: 50px;
+}
+
+.blog-section-div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+}
+
+.bottom {
+    background-color: rgb(139, 159, 169);;
+}
+
+footer {
+    /*background-color: grey;*/
+}
+
+footer > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+footer > ul > li {
+    margin: 0px 5px 0px 5px;
+}
+
+footer > div {
+    text-align: center;
+}
